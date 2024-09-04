@@ -3,7 +3,7 @@ import summaryApi from './../common/index';
 import { toast } from 'react-toastify';
 import './CatagoryList.css';
 import { Link } from 'react-router-dom';
-import BannerProduct from './bannerProduct';
+import BannerProduct from './BannerProduct';
 import Spinner from './../helper/Spinner'; // Import Spinner correctly
 import AddToCart from '../helper/addToCart';
 import { useContext } from 'react';
