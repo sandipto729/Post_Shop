@@ -76,7 +76,7 @@ const CatagoryList = () => {
                   className="product-photo"
                 />
                 <h4>{product.productName}</h4>
-                <div className="product-pricing" style={{ display: 'flex' , justifyContent: 'flex-start'}}>
+                <div className="product-pricing">
                   <p className="product-selling-price" style={{ color: 'red' }}>₹{product.productSellingPrice}</p>
                   <p className="product-price" style={{ color: 'green' }}>₹{product.productPrice}</p>
                   <p className='productOffer' style={{ color: 'red' }}>
