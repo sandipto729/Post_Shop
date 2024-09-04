@@ -11,3 +11,5 @@ const DisplayImage = ({ imgUrl, onClose }) => {
 };
 
 export default DisplayImage;
+
+

@@ -1,0 +1,296 @@
+.footer_top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://www.tusktravel.com/blog/wp-content/uploads/2023/06/shanti-niketan-west-bengal-min.jpg");
+    object-fit: contain;
+    background-size:contain; 
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    height: 20rem;
+}
+
+.top_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 32, 91, 0.82);
+    
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.top_container h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.top_container h4 {
+    font-size: 1rem;
+    font-weight: 200;
+    font-family:'Times New Roman', Times, serif
+}
+
+.top_social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top_social-links li {
+    list-style: none;
+}
+
+.top_social-links li a {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: block;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 3px;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-shadow: 7px 7px 7px rgba(222, 221, 221, 0.3);
+    background: linear-gradient(0deg, #ddd, #fff);
+    transition: 0.5s;
+}
+
+.top_social-links li a:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+.top_social-links li a .fab {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: linear-gradient(0deg, #fff, #ddd);
+    border-radius: 50%;
+    line-height: calc(60px - 12px);
+    font-size: 24px;
+    color: #262626;
+    transition: 0.5s;
+}
+
+.top_social-links li:nth-child(1) a:hover .fab {
+    color: #3b5998;
+}
+
+.top_social-links li:nth-child(2) a:hover .fab {
+    color: #00aced;
+}
+
+.top_social-links li:nth-child(3) a:hover .fab {
+    color: #dd4b39;
+}
+
+.top_social-links li:nth-child(4) a:hover .fab {
+    color: #007bb6;
+}
+
+.top_social-links li:nth-child(5) a:hover .fab {
+    color: #0d7e20;
+}
+
+/* Remove background color for screens less than 768px */
+@media screen and (max-width: 768px) {
+    .over_bg, .top_container {
+        background-color: transparent;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer_top {
+        background-image: none;
+    }
+    .top_container {
+        background-color: rgba(0, 32, 91, 0.992);
+    }
+    
+}
+
+.footer-container{
+    margin-top: 2rem;
+    background-color: rgba(0, 32, 91, 0.992);
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 1280px;
+    color: white;
+  }
+  
+  .footer{
+    max-width: 1280px;
+    padding:1.2rem 2.4rem;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2rem;
+  }
+  
+  .footer-top{
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.65rem;
+    
+  }
+  
+  .logo-svg{
+    width: 5rem;
+    height:5rem;
+    border-radius: 5px;
+    background-color: white;
+  }
+  
+  .comp-logo{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: -2.9rem;
+  }
+  .logo-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.28rem;
+    font-weight: bold;
+    color:rgb(236, 236, 236);
+  }
+  .social-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .filler-text{
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #b3b3b3;
+  }
+  .social{
+    display: flex;
+    gap: 0.8rem;
+  }
+ .fab_logo{
+   width: 1.5rem;
+   height: 1.5rem;
+   background-color: white;
+   border-radius: 2px;
+ }
+.social-icon {
+    display: block; /* Make sure the image fits the container */
+    width: 1.5rem; /* Adjust size as needed */
+    height: 1.5rem; /* Adjust size as needed */
+    transition: filter 0.3s ease; /* Smooth transition for image color change */
+}
+  .footer-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 58%;
+    grid-gap: 5rem;
+    padding-top: 2rem;
+  }
+  
+  .footer-grid-heading{
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  ul{
+    list-style-type: none;
+  }
+  .footer-link{
+    color: #b3b3b3;
+    font-size: 0.875rem;
+  }
+  .footer-links-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    /* align-items: flex-start; */
+    
+  }
+  .footer-grid-heading{
+    margin-bottom: 1.65rem;
+    display: flex;
+    align-items: center;
+    /* gap: 0.5rem; */
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: white;
+    justify-content: flex-end;
+  }
+  
+  .footer-copyright{
+    color: var(--gray);
+    font-size: 0.75rem;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+    padding-top: 1.15rem;
+    border-top: 1px solid #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem
+  }
+  
+  @media screen and (max-width:1080px) {
+    .footer-container{
+      margin-top: 3rem;
+    }
+    .footer{
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-top{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+         gap: 1.65rem; 
+        /*padding-left: 10rem; */
+    }
+    .footer-grid{
+      width: 100%;
+        align-self: center;
+        justify-content: space-evenly;
+    }
+    .filler-text{
+      text-align: center;
+    }
+  }
+  
+  @media screen and (max-width:850px) {
+    .footer{
+      text-align: center;
+  }
+    .footer-top{
+      width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.65rem;
+        padding-left: 1rem;
+    }
+    .footer-grid{
+       display: grid;
+       width: 100%;
+       grid-template-columns: repeat(2, 1fr);
+       /* grid-gap: 1rem; */
+  
+    }
+  }

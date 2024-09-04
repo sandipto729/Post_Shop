@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { toast } from 'react-toastify';
@@ -16,6 +16,7 @@ const Header = () => {
   const context = useContext(Context);
   const cartCount = context.countCartProduct;
   const navigate = useNavigate();
+  const [searchval, setSearchval] = useState('');
 
   const handleLogout = async () => {
     try {
@@ -39,10 +40,9 @@ const Header = () => {
     }
   };
 
-  const handleSearch = (e) => {
-    const searchVal = e.target.value;
-    if (searchVal.length) {
-      navigate(`/search?q=${searchVal}`);
+  const handleSearch = () => {
+    if (searchval.length) {
+      navigate(`/search?q=${searchval}`);
     }
   };
 
@@ -61,10 +61,10 @@ const Header = () => {
           <input
             type="text"
             placeholder="Search product here ..."
-            onChange={handleSearch}
+            onChange={(e) => setSearchval(e.target.value)}
           />
           <div className="search-icon">
-            <FaSearch />
+            <FaSearch onClick={handleSearch} />
           </div>
         </div>
 
