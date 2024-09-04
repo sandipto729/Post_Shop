@@ -78,7 +78,7 @@ const CatagoryProduct = () => {
                     </span>
                   </p>
                   <p><strong>Brand:</strong> {product.productBrand}</p>
-                  <p><strong>Description:</strong> {product.productDescription}</p>
+                  {/* <p><strong>Description:</strong> {product.productDescription}</p> */}
                   <button onClick={(e) => AddToCart(e, product, fetchCartProducts)} className="add-to-cart-btn">
                     Add to Cart
                   </button>

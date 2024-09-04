@@ -58,6 +58,7 @@
   border-radius: 5px;
   height: 200px;
   margin-bottom: 10px;
+  max-width: 200px;
 }
 
 .product-photo {
