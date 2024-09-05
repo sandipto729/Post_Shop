@@ -4,9 +4,9 @@ import { useSelector, useDispatch } from 'react-redux';
 import { toast } from 'react-toastify';
 import { FaSearch, FaRegUserCircle, FaShoppingCart } from "react-icons/fa";
 
-import Logo from '../Logo';
-import summeryAPI from './../../common/index'; // Ensure this import is correct
-import { setUserDetails } from './../../store/userSlice'; // Ensure this import is correct
+import LogoImage from './../../assest/images.png'; 
+import summeryAPI from './../../common/index'; 
+import { setUserDetails } from './../../store/userSlice'; 
 import Context from './../../context/index';
 import './Header.css';
 
@@ -52,7 +52,7 @@ const Header = () => {
         {/* Logo */}
         <div className="logo">
           <Link to="/">
-            <Logo height={40} />
+            <img src={LogoImage} alt="Logo" height={150} /> 
           </Link>
         </div>
 
