@@ -5,6 +5,7 @@ import { RouterProvider } from 'react-router-dom';
 import store from './store/store'; // Ensure this path and import match the default export
 import router from './routes/index';
 import App from './App';
+import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
