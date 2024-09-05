@@ -8,6 +8,7 @@ import Logo from '../Logo';
 import summeryAPI from './../../common/index'; // Ensure this import is correct
 import { setUserDetails } from './../../store/userSlice'; // Ensure this import is correct
 import Context from './../../context/index';
+import { AnimatedModal } from '../ui/AnimatedModal/AnimatedModal';
 import './Header.css';
 
 const Header = () => {
@@ -27,7 +28,7 @@ const Header = () => {
           'Content-Type': 'application/json',
         },
       });
-  
+
       const data = await response.json();
       if (data.success) {
         dispatch(setUserDetails(null));
@@ -47,8 +48,8 @@ const Header = () => {
   };
 
   return (
-    <header className="header">
-      <div className="header-container">
+    <header className="header mb-5">
+      <div className="header-container w-full flex items-center justify-around">
         {/* Logo */}
         <div className="logo">
           <Link to="/">
@@ -77,7 +78,7 @@ const Header = () => {
                 {user?.profilePhoto ? (
                   <img src={user?.profilePhoto} alt="user" className="profile-img" />
                 ) : (
-                  <FaRegUserCircle className="profile-icon" />
+                  <FaRegUserCircle className="profile-icon w-3 h-3" />
                 )}
               </div>
               {/* User Panel - Visible on Hover */}
@@ -91,7 +92,7 @@ const Header = () => {
           {user?._id && (
             <Link to='/cart' className="cart-section">
               <span className="cart-count">{cartCount}</span>
-              <FaShoppingCart className="cart-icon" />
+              <FaShoppingCart className="cart-icon w-3 h-3" />
             </Link>
           )}
 
@@ -100,7 +101,8 @@ const Header = () => {
             {user?._id ? (
               <button onClick={handleLogout} className="logout-button">Logout</button>
             ) : (
-              <Link to="/login" className="login-button">Login</Link>
+              // <Link to="/login" className="login-button">Login</Link>
+              <AnimatedModal />
             )}
           </div>
         </div>

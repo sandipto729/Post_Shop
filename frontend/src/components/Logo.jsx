@@ -1,9 +1,9 @@
 const MySVGComponent = () => {
     return (
       <svg
-        width="370.16679528778167"
-        height="155.08501865265873"
-        viewBox="0 0 370.16679528778167 155.08501865265873"
+        width="80"
+        height="50"
+        viewBox="0 30 80 50"
         className="css-1j8o68f"
       >
         <defs id="SvgjsDefs1029"></defs>
